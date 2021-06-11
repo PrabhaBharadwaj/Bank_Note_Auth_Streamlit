@@ -11,10 +11,9 @@ Approach:
 By using Linear RandomForset Regressor , we are predicting the JBank Note Authentication based on user input data as 0 or 1
 
 Here we used Streamlit web application Framework and deployed in Heroku(PlatformAs A service-PAAS) using gIThUB.
-
+Here we didnt use GitHub
 
 Here main files are :
-		app.py
-		model.pkl
+		APP.py
 		requirements.txt
-		Procfile
+		classifier.pkl

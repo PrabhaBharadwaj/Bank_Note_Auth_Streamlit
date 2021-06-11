@@ -12,7 +12,6 @@ Created on Fri May 15 12:50:04 2020
 @author: krish.naik
 """
 
-## Here all commented flask, swagger, #@app.route('/') are all flask and Docker related codes, not req for streamli 
 
 import numpy as np
 import pickle
@@ -66,32 +65,24 @@ def predict_note_authentication(variance,skewness,curtosis,entropy):
     return prediction
 
 
-#Here st.text_input, markdown, button, success are all streamlit provided html related function keys
+
 def main():
     st.title("Bank Authenticator")
-    #This is html style
     html_temp = """
     <div style="background-color:tomato;padding:10px">
     <h2 style="color:white;text-align:center;">Streamlit Bank Authenticator ML App </h2>
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
-    
-    #Here text_input reads ip from web
     variance = st.text_input("Variance","Type Here")
     skewness = st.text_input("skewness","Type Here")
     curtosis = st.text_input("curtosis","Type Here")
     entropy = st.text_input("entropy","Type Here")
     result=""
-     #Here button means create submit button with name=Predict in web and reads value
     if st.button("Predict"):
-            # It calls model prediction above func
         result=predict_note_authentication(variance,skewness,curtosis,entropy)
-    
-    # Here st.success displays the output
     st.success('The output is {}'.format(result))
     if st.button("About"):
-         # Here st.text displays text
         st.text("Lets LEarn")
         st.text("Built with Streamlit")
 
