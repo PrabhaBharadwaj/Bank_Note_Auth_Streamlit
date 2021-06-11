@@ -1,0 +1,20 @@
+Bank Note Authentication Problem:
+
+https://github.com/krishnaik06/Dockers
+
+To Understand Docker and Strealit, i have downloaded already built project folder from Krish naik Github
+So actual python code is MOdelTraining.ipynb. I have Krish already created classifier.pkl file, app.py , requirement.txt , (templates, static not req)
+Just i did deployment by syncing this in my github
+
+Approach:
+
+By using Linear RandomForset Regressor , we are predicting the JBank Note Authentication based on user input data as 0 or 1
+
+Here we used Streamlit web application Framework and deployed in Heroku(PlatformAs A service-PAAS) using gIThUB.
+
+
+Here main files are :
+		app.py
+		model.pkl
+		requirements.txt
+		Procfile
